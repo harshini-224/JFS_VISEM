@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Programming Language Inventors</title>
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Inventors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Programming Language Inventors</h1>
-<div class="container">
-<label for="inventorSelect">Select a programming language inventor:</label>
-<select id="inventorSelect">
-<option value="">-- Choose an inventor --</option>
-<option value="dennis">Dennis Ritchie (C)</option>
-<option value="james">James Gosling (Java)</option>
-<option value="guido">Guido van Rossum (Python)</option>
-<option value="bjarne">Bjarne Stroustrup (C++)</option>
-<option value="brendan">Brendan Eich (JavaScript)</option>
-<option value="niklaus">Niklaus Wirth (Pascal)</option>
-<option value="john">John McCarthy (Lisp)</option>
-<option value="grace">Grace Hopper (COBOL)</option>
-<option value="anders">Anders Hejlsberg (C#)</option>
-<option value="yukihiro">Yukihiro Matsumoto (Ruby)</option>
-</select>
 
+    <h1 class="title">Programming Languages & Their Inventors</h1>
 
-<div class="info" id="infoBox">
-<img id="inventorImg" src="" alt="Inventor Image" />
-<textarea id="inventorText" readonly></textarea>
-</div>
-</div>
+    <div class="select-box">
+        <label for="inventorSelect">Select a Programming Language Inventor:</label>
+        <select id="inventorSelect">
+            <option value="">-- Select --</option>
+            <option value="dennis">Dennis Ritchie (C)</option>
+            <option value="james">James Gosling (Java)</option>
+            <option value="guido">Guido van Rossum (Python)</option>
+            <option value="bjarne">Bjarne Stroustrup (C++)</option>
+            <option value="brendan">Brendan Eich (JavaScript)</option>
+            <option value="niklaus">Niklaus Wirth (Pascal)</option>
+            <option value="john">John McCarthy (Lisp)</option>
+            <option value="grace">Grace Hopper (COBOL)</option>
+            <option value="anders">Anders Hejlsberg (C#)</option>
+            <option value="yukihiro">Yukihiro Matsumoto (Ruby)</option>
+        </select>
+    </div>
 
+    <div id="infoBox" class="info">
+        <div class="left-box">
+            <img id="inventorImg" src="" alt="">
+            <p id="inventorName" class="name"></p>
+        </div>
 
-<script src="script.js"></script>
+        <textarea id="inventorText" class="text"></textarea>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
